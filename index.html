@@ -57,6 +57,14 @@
 			padding: 0px !important;
 		}
         </style>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Ma0XmM3ulHXspk_DC",
+      });
+   })();
+        </script>
     </head>
     <body>
         <!-- PRELOADER -->
@@ -1035,7 +1043,8 @@
                                     <div class="right">
                                         <div class="fields">
                                             <form
-											action="https://api.web3forms.com/submit" method="POST"
+                                                action=""
+                                                method="POST"
                                                 class="contact_form"
                                                 id="contact_form"
                                                 autocomplete="off"
@@ -1046,19 +1055,33 @@
                                                 </div>
                                                 <div class="input_list">
                                                     <ul>
-														<input type="hidden" name="access_key" value="e4c569f9-1e16-4069-baf3-0fd4d1e461d2">
-
+                                                        
                                                         <li>
-                                                            <input id="name" type="text" placeholder="Your Name" required>
+                                                            <input
+                                                                id="name"
+                                                                type="text"
+                                                                placeholder="Your Name"
+                                                                required
+                                                            >
                                                         </li>
                                                         <li>
-                                                            <input id="email" type="email" placeholder="Your Email" required>
+                                                            <input
+                                                                id="email"
+                                                                type="email"
+                                                                placeholder="Your Email"
+                                                                required
+                                                            >
                                                         </li>
                                                         <li>
                                                             <input id="phone" type="number" placeholder="Your Phone">
                                                         </li>
                                                         <li>
-                                                            <input id="subject" type="text" placeholder="Subject" required>
+                                                            <input
+                                                                id="subject"
+                                                                type="text"
+                                                                placeholder="Subject"
+                                                                required
+                                                            >
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1067,7 +1090,7 @@
                                                 </div>
                                                 <div class="iknow_tm_button">
                                                     <!-- <a id="send_message" href="#" type="Submit">Submit Now</a> -->
-													 <button type="submit">submit</button>
+                                                    <button type="submit" onclick="sendMail()">submit</button>
                                                 </div>
                                                 <!-- If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  -->
                                             </form>
