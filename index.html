@@ -83,7 +83,9 @@
 			);
 		})();
 	</script>
-	<script src="js/mail.js"></script>
+	<script src="js/mail.js">
+
+	</script>
 </head>
 
 <body>
@@ -176,8 +178,8 @@
 							</div>
 							<div class="right">
 								<div class="image">
-									<img src="img/thumbs/47-60.jpg" alt>
-									<div class="main" data-img-url="img/hero/myimg.jpg"></div>
+									<img src="img/thumbs/47-60.jpg" alt="Sajid Amin Web developer">
+									<div class="main" data-img-url="img/hero/sajid-amin-web-developer-in-rawalpindi.jpg"></div>
 									
 								</div>
 								
@@ -306,8 +308,8 @@
 						<div class="left">
 							<div class="left_inner">
 								<div class="image">
-									<img src="img/thumbs/35-44.jpg" alt>
-									<div class="main" data-img-url="img/hero/myimg.jpg"></div>
+									<img src="img/thumbs/35-44.jpg" alt="Sajid Amin Web developer">
+									<div class="main" data-img-url="img/hero/sajid-amin-web-developer-in-rawalpindi.jpg"></div>
 								</div>
 								<div class="details">
 									<ul>
@@ -1089,17 +1091,18 @@
 							</div>
 							<div class="right">
 								<div class="fields">
-									<form   onsubmit="sendMail()" method="POST" class="contact_form" id="contact_form"
+									<form    method="POST" class="contact_form" id="contact_form"
 										autocomplete="off">
 										<div class="returnmessage"
 											data-success="Your message has been received, We will contact you soon.">
 										</div>
-										<span id="formerror"></span>
+										
 										<div class="empty_notice">
 											
 										</div>
 										<div class="input_list">
 											<ul>
+												<span id="formerror"></span>
 												<li>
 													<input id="name" name="name" type="text" placeholder="Your Name" >
 													
@@ -1124,7 +1127,7 @@
 										</div>
 										<div class="iknow_tm_button">
 											<!-- <a id="send_message" href="#" type="Submit">Submit Now</a> -->
-											<button type="submit" class="btn btn-primary">submit</button>
+											<button type="submit" onclick="sendMail()" class="btn btn-primary">submit</button>
 										</div>
 										<!-- If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  -->
 									</form>
